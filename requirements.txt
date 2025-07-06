@@ -1,0 +1,5 @@
+# requirements.txt
+tensorflow==2.18.0
+gradio==5.31.0
+Pillow
+numpy
