@@ -63,6 +63,37 @@ Currently, HairNet can classify five distinct hair types:
 
 **- Computation:** The system is designed to run smoothly on hardware with moderate specifications.
 
+**System Workflow**
+
+HairNet follows a clear, step-by-step process from when you input an image until it predicts the hair style:
+
+**Explaining the Steps:**
+
+**1. Start:** The system is ready to receive an image.
+
+Hair Image (Input): This is the image you want to process and classify, either from you directly or from a prepared dataset.
+
+Preprocessing:
+
+Image Resizing: All images will be resized to 150 x 150 pixels to match the model's required input.
+
+Image Augmentation: To make the training data more diverse and prevent the model from overfitting (memorizing too much), images are slightly altered, like being horizontally flipped, zoomed, rotated, or having color changes.
+
+Pixel Normalization: Image pixel values will be scaled to a range of [0, 1] by dividing them by 255.
+
+CNN Model (Training/Testing):
+
+Convolutional Layers: This is where the model "learns" and extracts important features from the image.
+
+ReLU Activation: The ReLU function adds non-linearity to the model, helping it recognize more complex patterns.
+
+MaxPooling: This process efficiently reduces image dimensions while keeping key features.
+
+Fully Connected Layers: After features are extracted, the image data goes to these layers for the final classification.
+
+Softmax Output: The last layer uses the Softmax function to give you probabilities (likelihoods) for each hair style type (e.g., "Wavy" 90%, "Straight" 5%, etc.).
+
+
 ![image](https://github.com/user-attachments/assets/81c48df5-2394-4d7f-ab6b-40118ae226cb)
 
 ![image](https://github.com/user-attachments/assets/f57473ca-3084-4137-bd31-64d699303a2c)
