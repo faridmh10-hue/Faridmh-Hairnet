@@ -71,62 +71,65 @@ HairNet follows a clear, step-by-step process from when you input an image until
 
 **1. Start:** The system is ready to receive an image.
 
-2. Hair Image (Input): This is the image you want to process and classify, either from you directly or from a prepared dataset.
+**2. Hair Image (Input):** This is the image you want to process and classify, either from you directly or from a prepared dataset.
 
-3. Preprocessing:
+**3. Preprocessing:**
 
-- Image Resizing: All images will be resized to 150 x 150 pixels to match the model's required input.
+**- Image Resizing:** All images will be resized to 150 x 150 pixels to match the model's required input.
 
-- Image Augmentation: To make the training data more diverse and prevent the model from overfitting (memorizing too much), images are slightly altered, like being horizontally flipped, zoomed, rotated, or having color changes.
+**- Image Augmentation:** To make the training data more diverse and prevent the model from overfitting (memorizing too much), images are slightly altered, like being horizontally flipped, zoomed, rotated, or having color changes.
 
-- Pixel Normalization: Image pixel values will be scaled to a range of [0, 1] by dividing them by 255.
+**- Pixel Normalization:** Image pixel values will be scaled to a range of [0, 1] by dividing them by 255.
 
-4. CNN Model (Training/Testing):
+**4. CNN Model (Training/Testing):**
 
-- Convolutional Layers: This is where the model "learns" and extracts important features from the image.
+**- Convolutional Layers:** This is where the model "learns" and extracts important features from the image.
 
-- ReLU Activation: The ReLU function adds non-linearity to the model, helping it recognize more complex patterns.
+**- ReLU Activation:** The ReLU function adds non-linearity to the model, helping it recognize more complex patterns.
 
-MaxPooling: This process efficiently reduces image dimensions while keeping key features.
+**- MaxPooling:** This process efficiently reduces image dimensions while keeping key features.
 
-Fully Connected Layers: After features are extracted, the image data goes to these layers for the final classification.
+**- Fully Connected Layers:** After features are extracted, the image data goes to these layers for the final classification.
 
-Softmax Output: The last layer uses the Softmax function to give you probabilities (likelihoods) for each hair style type (e.g., "Wavy" 90%, "Straight" 5%, etc.).
+**- Softmax Output:** The last layer uses the Softmax function to give you probabilities (likelihoods) for each hair style type (e.g., "Wavy" 90%, "Straight" 5%, etc.).
 
-Output and Recommendations
+**Output and Recommendations**
+
 Once the model finishes its work, HairNet will give you these outputs:
 
-Hair Style Prediction: You'll see a clear label showing the predicted hair type (e.g., "Wavy," "Straight," "Curly," "Dreadlocks," "Kinky").
+**- Hair Style Prediction:** You'll see a clear label showing the predicted hair type (e.g., "Wavy," "Straight," "Curly," "Dreadlocks," "Kinky").
 
-Accuracy Display: The system will also show how accurate the model is based on the training and testing data.
+**- Accuracy Display:** The system will also show how accurate the model is based on the training and testing data.
 
-Result Visualization: The image you put in will be displayed again, along with its predicted label. So, you can see the results immediately.
+**- Result Visualization:** The image you put in will be displayed again, along with its predicted label. So, you can see the results immediately.
 
-Hair Care Recommendations: And here's the cool part! The system will also give you personalized hair care tips that match the identified hair type.
+**- Hair Care Recommendations:** And here's the cool part! The system will also give you personalized hair care tips that match the identified hair type.
 
 The process then finishes, ready to be repeated for new images you want to process.
 
-Dataset Used
+**Dataset Used**
 For this project, I used a publicly available dataset from Kaggle:
 
-Hair Type Dataset: https://www.kaggle.com/datasets/kavyasreeb/hair-type-dataset
+**- Hair Type Dataset:** https://www.kaggle.com/datasets/kavyasreeb/hair-type-dataset
 
-Project Files
+**Project Files**
+
 My project includes two main Jupyter Notebook (.ipynb) files:
 
-FaridMh_4TIE_HairnetCNN.ipynb:
+1. FaridMh_4TIE_HairnetCNN.ipynb:
 
-This notebook contains everything related to the core Deep Learning process.
+- This notebook contains everything related to the core Deep Learning process.
 
-It covers how to load and preprocess the data, building the CNN model architecture, the training process, and evaluating its performance.
+- It covers how to load and preprocess the data, building the CNN model architecture, the training process, and evaluating its performance.
 
-HairnetCNNDEMO_FaridMuhammadHidayat_4TIE.ipynb:
+2. HairnetCNNDEMO_FaridMuhammadHidayat_4TIE.ipynb:
 
-This notebook is specifically for demonstrating the HairNet system via a web interface.
+- This notebook is specifically for demonstrating the HairNet system via a web interface.
 
-It includes the code for loading the trained model and features a temporary deployment using Gradio, allowing users to interact with the system through a simple web browser.
+- It includes the code for loading the trained model and features a temporary deployment using Gradio, allowing users to interact with the system through a simple web browser.
 
 
+# **OUTPUT:** 
 ![image](https://github.com/user-attachments/assets/81c48df5-2394-4d7f-ab6b-40118ae226cb)
 
 ![image](https://github.com/user-attachments/assets/f57473ca-3084-4137-bd31-64d699303a2c)
