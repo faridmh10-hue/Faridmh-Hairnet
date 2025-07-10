@@ -68,3 +68,9 @@ Our project includes two key Jupyter Notebook (.ipynb) files:
 FaridMh_4TIE_HairnetCNN.ipynb: This notebook is dedicated to creating and training the deep learning model. It covers all aspects from data loading and preprocessing to model architecture definition, training, and evaluation.
 
 HairnetCNNDEMO_FaridMuhammadHidayat_4TIE.ipynb: This notebook facilitates the web-based demonstration of our HairNet system. It includes the code for loading the trained model and features a temporary deployment using Gradio, allowing users to interact with the system via a web interface.
+
+![image](https://github.com/user-attachments/assets/81c48df5-2394-4d7f-ab6b-40118ae226cb)
+
+![image](https://github.com/user-attachments/assets/f57473ca-3084-4137-bd31-64d699303a2c)
+
+
